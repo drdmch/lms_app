@@ -1,0 +1,37 @@
+
+== 1. STRING: сесія користувача з часом життя (SET / GET / TTL) ==
+GET session:abc123  -> user:17
+TTL session:abc123  -> 1799,919 c
+
+== 2. HASH: профіль студента (HSET / HGET / HGETALL) ==
+HGET user:17 name   -> Олена
+   name = Олена
+   role = student
+   group = ТК-31
+
+== 3. INCR: лічильник переглядів курсу ==
+GET course:5:views  -> 10
+
+== 4. LIST: останні переглянуті курси (LPUSH / LTRIM / LRANGE) ==
+LRANGE user:17:recent 0 -1 -> 7, 5, 12, 1, 8
+
+== 5. SET: хто зараз онлайн (SADD / SISMEMBER / SCARD / SINTER) ==
+SCARD online -> 3
+SISMEMBER online 22 -> False
+SINTER online course:5:students (студенти курсу онлайн) -> 17, 30
+
+== 6. SORTED SET: рейтинг за тестом (ZADD / ZREVRANGE / ZRANK) ==
+   Олена: 95
+   Марта: 88
+   Андрій: 80
+Місце Марти -> 2
+
+== 7. EXPIRE + INCR: не більше 3 спроб тесту за годину ==
+спроба 1: дозволено
+спроба 2: дозволено
+спроба 3: дозволено
+спроба 4: заборонено
+
+== 8. Кеш курсу: SET з EX, потім DEL коли курс змінили ==
+EXISTS cache:course:5 -> True
+після DEL EXISTS -> False

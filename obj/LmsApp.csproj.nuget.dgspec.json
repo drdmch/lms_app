@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dariademchik/Downloads/LmsApp/LmsApp.csproj": {}
+    "/Users/dariademchik/uni/stbd/LmsApp/LmsApp.csproj": {}
   },
   "projects": {
-    "/Users/dariademchik/Downloads/LmsApp/LmsApp.csproj": {
+    "/Users/dariademchik/uni/stbd/LmsApp/LmsApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dariademchik/Downloads/LmsApp/LmsApp.csproj",
+        "projectUniqueName": "/Users/dariademchik/uni/stbd/LmsApp/LmsApp.csproj",
         "projectName": "LmsApp",
-        "projectPath": "/Users/dariademchik/Downloads/LmsApp/LmsApp.csproj",
+        "projectPath": "/Users/dariademchik/uni/stbd/LmsApp/LmsApp.csproj",
         "packagesPath": "/Users/dariademchik/.nuget/packages/",
-        "outputPath": "/Users/dariademchik/Downloads/LmsApp/obj/",
+        "outputPath": "/Users/dariademchik/uni/stbd/LmsApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/dariademchik/.nuget/NuGet/NuGet.Config"

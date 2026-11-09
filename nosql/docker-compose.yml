@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: lab2_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: lms_lab2
+    ports: ["55432:5432"]
+    volumes:
+      - ./sql/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    mem_limit: 1g
+
+  mongo:
+    image: mongo:7.0
+    container_name: lab2_mongo
+    command: ["mongod", "--wiredTigerCacheSizeGB", "0.25"]
+    ports: ["57017:27017"]
+    mem_limit: 1g
+
+  redis:
+    image: redis:7.4
+    container_name: lab2_redis
+    ports: ["56379:6379"]
+    mem_limit: 256m

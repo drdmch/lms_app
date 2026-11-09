@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- лабораторна з NoSQL — окремий проєкт у nosql/ -->
+    <Compile Remove="nosql/**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Npgsql" Version="8.0.3" />
   </ItemGroup>
 

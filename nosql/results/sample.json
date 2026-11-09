@@ -1,0 +1,71 @@
+{
+  "_id": 10,
+  "title": "Курс 10: індекс вузол мережа",
+  "category": "Бази даних",
+  "modules": [
+    {
+      "title": "Модуль 1. мережа індекс",
+      "position": 1,
+      "lessons": [
+        {
+          "lessonId": 160,
+          "title": "Урок 1. запит дані дані",
+          "position": 1,
+          "tags": [
+            "tag5"
+          ],
+          "materials": [
+            {
+              "type": "article",
+              "url": "https://lms.test/files/263712.article",
+              "body": "протокол сервіс таблиця схема структура ..."
+            },
+            {
+              "type": "link",
+              "url": "https://lms.test/files/695323.link"
+            },
+            {
+              "type": "article",
+              "url": "https://lms.test/files/290958.article",
+              "body": "схема вузол протокол система функція мер..."
+            },
+            {
+              "type": "video",
+              "url": "https://lms.test/files/416797.video",
+              "durationSec": 407
+            }
+          ],
+          "quizzes": [
+            {
+              "title": "Тест: звіт структура",
+              "passScore": 61,
+              "questions": [
+                {
+                  "text": "граф система звіт мережа сервіс транзакція?",
+                  "options": [
+                    {
+                      "text": "граф ключ",
+                      "isCorrect": false
+                    },
+                    {
+                      "text": "граф граф",
+                      "isCorrect": false
+                    },
+                    {
+                      "text": "запит сервіс",
+                      "isCorrect": false
+                    },
+                    {
+                      "text": "дані сервіс",
+                      "isCorrect": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 using LmsApp;
 
 var cs = Environment.GetEnvironmentVariable("LMS_CONNECTION")
-         ?? "Host=localhost;Port=5432;Database=lms_db;Username=dariademchik;Password=postgres;Search Path=lms";
+         ?? "Host=localhost;Port=5432;Database=lms_db;Username=postgres;Password=postgres;Search Path=lms";
 
 IUnitOfWorkFactory factory = new UnitOfWorkFactory(cs);
 var sfx = Guid.NewGuid().ToString("N")[..8];  
